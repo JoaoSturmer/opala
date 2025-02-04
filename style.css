@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-fundo: linear-gradient(to left, #000000, #384B70);
+    --cor-texto: #FCFAEE;
+    --cor-destaque: #507687;
+    --cor-borda: #507687;
+    --cor-borda2: #FCFAEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:9%;
+}
+
+body {
+    /* height: 90vh; */
+    box-sizing: border-box;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.cabeca{
+    margin: 2% 0% 0% 10%;
+    justify-content: space-between;
+}
+
+.cabeca_menu{
+    display: flex;
+    gap:3%;
+}
+
+.links{
+    color: var(--cor-texto);
+    font-family: 'krona one', sans-serif;
+    text-decoration: none;
+}
+
+.links:hover{
+    color: var(--cor-destaque);
+}
+
+.container__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+strong {
+    color: var(--cor-destaque);
+    padding-left: 10px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    width: 500px;
+    color: var(--cor-texto);
+    font-size: 2.25rem;
+    font-family: 'krona one', sans-serif;
+}
+
+.texto{
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.acessos{
+    font-family: 'krona one', sans-serif;
+    color: var(--cor-texto);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.container_foto{
+    display: flex;
+    height: 300px;
+    width: 50%;
+}
+
+.foto{
+    height: 100%;
+    width: 100%;
+    border-color: var(--cor-borda);
+    border-style: inset;
+    border-width: 3px;
+    border-radius:8px;
+    background-image: url(./imagens/opala.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto:hover{
+    background-image: url(./imagens/1969-Chevrolet-Opala-5.png);
+    background-size: cover;
+    border-style: outset;
+    border-color: var(--cor-borda2);
+}
+
+.foto_about{
+    height: 300px;
+    width: 450px;
+    border-color: var(--cor-borda);
+    border-style: inset;
+    border-width: 3px;
+    border-radius:8px;
+    background-image: url(./imagens/opala_fabricacao.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto_about:hover{
+    background-image: url(./imagens/mercosul.png);
+    background-size: cover;
+    border-style: outset;
+    border-color: var(--cor-borda2);
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    background-color: none;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 378px;
+    height: 32px;
+    padding: 21.5px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:8px;
+    border-color: var(--cor-borda);
+}
+
+.botao:hover{
+    border-color: var(--cor-borda2);
+    width: 400px;
+    height: 32px;
+}
+
+.logo1{
+    margin-left: 70px;
+    width:45px;
+    height: 25px;
+}
+.logo2{
+    margin-left: 70px;
+    width:45px;
+    height: 40px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--cor-destaque);
+    color: black;
+    padding: 4px;
+    font-family: 'krona one', sans-serif;
+}
